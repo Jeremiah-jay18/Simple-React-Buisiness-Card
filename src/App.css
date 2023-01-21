@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+}
+html{
+  transition:all 0.5s linear;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper{
+ padding:2rem 5rem;
+ background-color: rgb(31, 9, 23);
+ color:white;
+ border-radius: 2rem;
+ max-width:30rem;
+ margin: auto;
+ height:80rem
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  max-width:21rem;
+  background-color: rgb(17, 5, 13);
+  height:100%
 }
+.information{
+  display: block;text-align: center;
+}
+.information .image{
+  width:100%;
+  height:15rem;
+  border-radius: 10px 10px 0px 0px ;
+}
+.information .image img{
+  width: 100%;
+  border-radius: 10px 10px 0px 0px ;
+}
+.information .ids{
+  margin-top: 1rem;
+}
+.information .ids span:first-child{
+ font-weight: bold;
+ font-size: 1.5rem;
+}
+.information > span {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.information .icons{
   display: flex;
-  flex-direction: column;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+.information .icons img{
+  width:1rem
+}
+.information .icons .email,.linkedin{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding:0.5rem 1rem 0.5rem 1rem ;
+  color:black;
+  background-color: white;
+  border-radius: 0.3rem;
+   font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.information .icons .email{
+  width:6.5rem
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.information .icons .linkedin{
+  width:7.5rem
+}
+.about {
+  padding: 1rem 2rem;
+}
+.interests {
+  padding: 1rem 2rem;
+}
+.interests ul li{
+  list-style-type: none;
+  margin:2px;
+}
+.footer{
+  text-align: center;
+  margin: auto;
+  padding: 1rem 1rem;
+  width: 14rem;
+}
+.footer .icons{
+  display: flex;
+  justify-content: space-between;
+}
+.footer .icons img{
+  width:2rem;
+}
+@media screen and (max-width:400px) {
+  .information .image img{
+      height:15rem;
   }
-  to {
-    transform: rotate(360deg);
+  .information .icons{
+      display:block; 
+   }
+  .information .icons .linkedin{
+      margin-top:1rem
+  }
+  .footer{
+      width: 12rem;
   }
 }
